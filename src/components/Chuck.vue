@@ -1,7 +1,7 @@
 <template>
 
-  <img v-bind:src="fact"></img>
-  <v-html 
+  <img v-bind:src="fact"> </img>
+
 </template>
 
 <script>
