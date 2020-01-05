@@ -1,38 +1,29 @@
 <template>
   <div id="app">
-    <TopBar/>
-    <MainContent/>
+    <TopBar />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import TopBar from './components/topBar'
-import MainContent from './components/MainContent'
-
+import TopBar from "./components/topBar";
+import MainContent from "./components/MainContent";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     TopBar,
     MainContent
-    
   },
-  data () {
-    return {
-    }
-  },
-
-}
+  data() {
+    return {};
+  }
+};
 </script>
-
-
-
-
-
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -40,5 +31,4 @@ export default {
   margin: 0rem;
   padding: 0rem;
 }
-
 </style>

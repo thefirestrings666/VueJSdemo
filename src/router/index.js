@@ -1,15 +1,15 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import MainPage from '@/app.vue'
+import Vue from "vue";
+import Router from "vue-router";
+import MainContent from "../components/MainContent";
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'MainPage',
-      component: MainPage
+      path: "/",
+      name: "MainContent",
+      component: MainContent
     }
   ]
-})
+});
