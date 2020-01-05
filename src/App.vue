@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <TopBar/>
-    <MainContent/>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -10,25 +10,16 @@ import TopBar from './components/topBar'
 import MainContent from './components/MainContent'
 
 
+
 export default {
   name: 'App',
   components: {
     TopBar,
     MainContent
-    
-  },
-  data () {
-    return {
-    }
-  },
+  }
 
 }
 </script>
-
-
-
-
-
 
 <style>
 #app {

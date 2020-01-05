@@ -1,6 +1,5 @@
 <template>
     <div id=topBar>
-
         <v-button :onClick="consoleClick" id="HomeButton"> Home </v-button>
     </div>
 </template>
