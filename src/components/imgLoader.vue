@@ -7,7 +7,7 @@
 <script>
 
 export default {
-  name: "ChuckFact",
+  name: "imgLoader",
   props: {
     fact: String
   }
