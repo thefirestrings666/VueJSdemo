@@ -1,8 +1,7 @@
 <template>
     <div id="center">
         <div class="starContainer">
-            <star-rating @rating-selected="generateNewImage" :inline="true"></star-rating>
-            <div>Rating selected : {{ rating }}</div>
+            <star-rating v-model="rating" @rating-selected="generateNewImage" :rating="rating" :inline="true"></star-rating>
             <div id="container">
                 <vue-load-image>
                     <img slot="image" :src='imgUrl_1' />
@@ -44,6 +43,7 @@ export default {
             axios.get("https://api.thecatapi.com/v1/images/search").then(response => {
                 this.imgUrl_1 =  response.data[0].url  
                 this.rating = noteIn;
+                this.rating = 0
             }) 
             
         }
